@@ -1,1 +1,22 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+pod/luannt19uda created
+NAME          READY   STATUS              RESTARTS   AGE
+luannt19uda   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "luannt19uda" already exists
+NAME          READY   STATUS              RESTARTS   AGE
+luannt19uda   0/1     ContainerCreating   0          17s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "luannt19uda" already exists
+NAME          READY   STATUS              RESTARTS   AGE
+luannt19uda   0/1     ContainerCreating   0          28s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "luannt19uda" already exists
+NAME          READY   STATUS    RESTARTS   AGE
+luannt19uda   1/1     Running   0          50s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
