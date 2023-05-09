@@ -1,3 +1,12 @@
+ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+
 (.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_docker.sh 
 [+] Building 6.1s (7/8)                                                                                                                                                                                                          
  => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s
