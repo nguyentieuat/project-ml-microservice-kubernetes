@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![<CricleCi>](https://circleci.com/gh/nguyentieuat/project-ml-microservice-kubernetes.svg?style=svg)](https://app.circleci.com/pipelines/github/nguyentieuat/project-ml-microservice-kubernetes?branch=master)
+
 
 ## Project Overview
 

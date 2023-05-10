@@ -1,72 +1,29 @@
-ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./make_prediction.sh
-Port: 8000
-{
-  "prediction": [
-    20.35373177134412
-  ]
-}
-
-
-(.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_docker.sh 
-[+] Building 6.1s (7/8)                                                                                                                                                                                                          
- => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s
- => => transferring dockerfile: 475B                                                                                                                                                                                        0.0s
- => [internal] load .dockerignore                                                                                                                                                                                           0.0s
- => => transferring context: 2B                                                                                                                                                                                             0.0s
- => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                                     0.2s
- => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                                               0.0s
- => [internal] load build context                                                                                                                                                                                           0.0s
- => => transferring context: 6.56kB                                                                                                                                                                                         0.0s
-[+] Building 6.2s (7/8)                                                                                                                                                                                                          
- => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s
- => => transferring dockerfile: 475B                                                                                                                                                                                        0.0s
- => [internal] load .dockerignore                                                                                                                                                                                           0.0s
- => => transferring context: 2B                                                                                                                                                                                             0.0s
- => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                                     0.2s
- => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                                               0.0s
- => [internal] load build context                                                                                                                                                                                           0.0s
- => => transferring context: 6.56kB                                                                                                                                                                                         0.0s
-[+] Building 6.3s (7/8)                                                                                                                                                                                                          
- => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s
- => => transferring dockerfile: 475B                                                                                                                                                                                        0.0s
- => [internal] load .dockerignore                                                                                                                                                                                           0.0s
- => => transferring context: 2B                                                                                                                                                                                             0.0s
- => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                                     0.2s
- => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                                               0.0s
- => [internal] load build context                                                                                                                                                                                           0.0s
- => => transferring context: 6.56kB                                                                                                                                                                                         0.0s
-[+] Building 6.5s (7/8)                                                                                                                                                                                                          
- => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s
- => => transferring dockerfile: 475B                                                                                                                                                                                        0.0s
- => [internal] load .dockerignore                                                                                                                                                                                           0.0s
- => => transferring context: 2B                                                                                                                                                                                             0.0s
- => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                                     0.2s
- => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                                               0.0s
- => [internal] load build context                                                                                                                                                                                           0.0s
- => => transferring context: 6.56kB                                                                                                                                                                                         0.0s
-[+] Building 27.5s (9/9) FINISHED                                                                                                                                                                               
- => [internal] load build definition from Dockerfile                                                                                                                                                       0.0s
- => => transferring dockerfile: 475B                                                                                                                                                                       0.0s 
+(.devops) ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./run_docker.sh
+[+] Building 30.2s (9/9) FINISHED                                                                                                                                                                               
  => [internal] load .dockerignore                                                                                                                                                                          0.0s
- => => transferring context: 2B                                                                                                                                                                            0.0s 
- => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                    0.2s
- => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                              0.0s 
+ => => transferring context: 2B                                                                                                                                                                            0.0s
+ => [internal] load build definition from Dockerfile                                                                                                                                                       0.0s
+ => => transferring dockerfile: 475B                                                                                                                                                                       0.0s
+ => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                    0.1s
+ => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                              0.0s
  => [internal] load build context                                                                                                                                                                          0.0s
- => => transferring context: 6.56kB                                                                                                                                                                        0.0s 
+ => => transferring context: 8.97kB                                                                                                                                                                        0.0s
  => CACHED [2/4] WORKDIR /app                                                                                                                                                                              0.0s
- => [3/4] COPY . app.py /app/                                                                                                                                                                              1.3s 
- => [4/4] RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt                                                                                                  23.9s
- => exporting to image                                                                                                                                                                                     2.0s 
- => => exporting layers                                                                                                                                                                                    2.0s
- => => writing image sha256:085c8cabf1dc25a37f6e0d423dabf7181eb379a63bf15a16315a20f9e81ee188                                                                                                               0.0s 
+ => [3/4] COPY . app.py /app/                                                                                                                                                                              2.7s
+ => [4/4] RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt                                                                                                  24.6s
+ => exporting to image                                                                                                                                                                                     2.7s 
+ => => exporting layers                                                                                                                                                                                    2.7s 
+ => => writing image sha256:cb58afd0c5d9fa3465154fc9dbb7bf2ab1839ccacaa443410d76e2b43074f285                                                                                                               0.0s 
  => => naming to docker.io/library/luannt19uda                                                                                                                                                             0.0s 
-REPOSITORY                    TAG       IMAGE ID       CREATED          SIZE                                                                                                                                    
-luannt19uda                   latest    085c8cabf1dc   2 seconds ago    1.32GB                                                                                                                                  
-<none>                        <none>    032ceeef2729   7 minutes ago    1.32GB
-<none>                        <none>    25ea8557bb1c   10 minutes ago   1.43GB
-<none>                        <none>    7d9c0a79a33f   11 minutes ago   1.43GB
-<none>                        <none>    4bdea4fffbf6   23 minutes ago   1.43GB
-gcr.io/k8s-minikube/kicbase   v0.0.39   67a4b1138d2d   5 weeks ago      1.05GB
+REPOSITORY                    TAG       IMAGE ID       CREATED              SIZE                                                                                                                                
+luannt19uda                   latest    cb58afd0c5d9   2 seconds ago        1.38GB                                                                                                                              
+<none>                        <none>    0c275786f28e   About a minute ago   1.38GB
+nguyentieuat/luannt19uda      v1.0.0    085c8cabf1dc   13 hours ago         1.32GB
+<none>                        <none>    032ceeef2729   13 hours ago         1.32GB
+<none>                        <none>    25ea8557bb1c   13 hours ago         1.43GB
+<none>                        <none>    7d9c0a79a33f   13 hours ago         1.43GB
+<none>                        <none>    4bdea4fffbf6   14 hours ago         1.43GB
+gcr.io/k8s-minikube/kicbase   v0.0.39   67a4b1138d2d   5 weeks ago          1.05GB
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
@@ -75,14 +32,23 @@ gcr.io/k8s-minikube/kicbase   v0.0.39   67a4b1138d2d   5 weeks ago      1.05GB
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 196-315-306
-[2023-05-09 12:28:37,358] INFO in app: JSON payload: 
+ * Debugger PIN: 146-885-237
+[2023-05-10 01:36:22,770] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2023-05-09 12:28:37,371] INFO in app: Inference payload DataFrame: 
+[2023-05-10 01:36:22,783] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-05-09 12:28:37,382] INFO in app: Scaling Payload: 
+[2023-05-10 01:36:22,793] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-05-09 12:28:37,385] INFO in app: outpu prediction : {prediction}
-172.17.0.1 - - [09/May/2023 12:28:37] "POST /predict HTTP/1.1" 200 -
+[2023-05-10 01:36:22,797] INFO in app: output prediction : [20.35373177134412]
+172.17.0.1 - - [10/May/2023 01:36:22] "POST /predict HTTP/1.1" 200 -
+
+
+ubuntu@ip-172-31-25-247:~/project-ml-microservice-kubernetes$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
